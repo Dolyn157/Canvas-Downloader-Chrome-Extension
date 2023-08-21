@@ -4,7 +4,7 @@ chrome.runtime.onMessage.addListener((request , sender , sendResponse) => {
         let canvases = getAllCanvas()
         downLoadCanvas(canvases);
     }else{
-        console.log("这不是点击");
+        console.log("这不是点击！");
     }
     
     sendResponse("content got!")
