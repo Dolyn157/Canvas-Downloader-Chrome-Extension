@@ -1,0 +1,31 @@
+{
+    "manifest_version": 3,
+    "name": "Canvas下载插件",
+    "version": "0.0.1",
+    "description": "一个下载Canvas元素中的图片的插件",
+    "background":{
+        "server_worker": "src/background.js"
+    },
+    "icons": {
+      "16": "images/16.png",
+      "32": "images/32.png",
+      "48": "images/64.png",
+      "128": "images/128.png"
+    },
+    "action":{
+        "default_popup": "src/popup.html",
+        "default_icon":{
+            "16": "images/16.png",
+            "32": "images/32.png",
+             "48": "images/64.png",
+            "128": "images/128.png"
+        }
+    },
+    "options_page": "src/option.html",
+    "content_scripts":[
+        {
+        "matches": ["https://*/*"],
+        "js": ["src/content.js"]
+        }
+    ]
+  }
