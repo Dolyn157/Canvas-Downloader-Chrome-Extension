@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Canvas下载插件",
-    "version": "0.0.1",
+    "name": "朵琳的Canvas下载插件",
+    "version": "0.0.2",
     "description": "一个下载Canvas元素中的图片的插件",
     "background":{
         "server_worker": "src/background.js"
